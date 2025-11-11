@@ -1,0 +1,1 @@
+Forward Selection features: ['total_repayment', 'missed_repayments', 'monthly_emi', 'tenure_years', 'avg_balance_amt', 'cheque_bounces', 'vintage_in_months', 'number_of_loans', 'loan_amount', 'collateral_value', 'avg_rr_per_city']
