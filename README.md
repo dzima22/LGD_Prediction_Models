@@ -4,7 +4,7 @@
 - Areas: Credit Risk, Econometrics, Loss Given Default (LGD), Machine Learning  
 
 ## 💡 About  
-The project focuses on **Loss Given Default (LGD)** prediction — one of the three key components of credit risk modeling (alongside PD and EAD).  
+The project focuses on **Loss Given Default** prediction — one of the three key components of credit risk modeling (alongside PD and EAD).  
 The goal is to estimate the proportion of exposure a lender loses in the event of borrower default, using both traditional statistical and modern machine learning approaches.  
 The study utilizes loan-level data containing information on repayment behavior, balances, and loan characteristics.  
 
