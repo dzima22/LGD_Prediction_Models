@@ -1,1 +1,0 @@
-Hellwig best subset: ('cheque_bounces', 'number_of_loans', 'missed_repayments', 'vintage_in_months', 'total_repayment')
