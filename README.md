@@ -1,28 +1,33 @@
-# LGD_Prediction_Models
-<div align="center">
-  <img src="https://github.com/dzima22/The-evaluation-of-the-risk-of-corporate-bankruptcy-/blob/main/imgs/bankruptcy.jpg" alt="" width="250"/>
-</div>
+# 💼 LGD Prediction Models
+## 🏷️ Tags  
+- Models: Logistic Regression, XGBoost, Neural Network  
+- Areas: Credit Risk, Econometrics, Loss Given Default (LGD), Machine Learning  
 
-# ©️ Tags
-- Models: logistic regression, a linear probability regression
-- Areas: binomial models, Econometrics, regression, prediction, bankruptcy
+## 💡 About  
+The project focuses on **Loss Given Default (LGD)** prediction — one of the three key components of credit risk modeling (alongside PD and EAD).  
+The goal is to estimate the proportion of exposure a lender loses in the event of borrower default, using both traditional statistical and modern machine learning approaches.  
+The study utilizes loan-level data containing information on repayment behavior, balances, and loan characteristics.  
 
-# :bulb: About
-The study focuses on the prediction of company bankruptcies using econometric techniques, specifically analyzing the financial data of Polish companies from 2008 to 2020. The goal is to evaluate the accuracy of logistic regression models in assessing the risk of bankruptcy.
-# :open_file_folder: Content
-- [research](https://github.com/dzima22/The-evaluation-of-the-risk-of-corporate-bankruptcy-/blob/main/research.pdf) -  main file containing the research ✍️
-- [code_for_research](https://github.com/dzima22/The-evaluation-of-the-risk-of-corporate-bankruptcy-/blob/main/code_for_research.R) – analysis, modeling procedure stored as R script ⚗️
-- [dataset](https://github.com/dzima22/The-evaluation-of-the-risk-of-corporate-bankruptcy-/blob/main/dane_do_projektu1.xlsx) – raw dataset 📀
+## 📂 Content  
+- [**Main.py**](https://github.com/dzima22/LGD_Prediction_Models/blob/main/Main.py) — central pipeline setup covering data loading, preprocessing, modeling, evaluation and visualization ⚙️  
+- [**modules**](https://github.com/dzima22/LGD_Prediction_Models/tree/main/code/modules) — folder containing separate scripts for data processing, feature selection, modeling, evaluation, and visualizations 🧩  
+- [**datasets**](https://drive.google.com/drive/folders/1eJa3BlWuP4GK_8zP0EMllcM_uBTrWGap?usp=sharing) — datasets used in analysis 📁  
+- [**Research**](https://github.com/dzima22/LGD_Prediction_Models/blob/main/Reserch.pdf) —  full research report summarizing methodology, models, and findings 📄 
+- [**visuals_folder**](https://github.com/dzima22/LGD_Prediction_Models/tree/main/visuals_folder) — output containing visuals and models' performance  📊  
 
-# :test_tube: Methodology
-- The study utilizes financial data of Polish companies listed on the Warsaw Stock Exchange (GPW) and NewConnect from 2008 to 2020. The data includes both bankrupt and non-bankrupt companies, categorized based on specific financial criteria. The dataset comprises financial statements and key financial ratios such as `Return on Assets (ROA)`, `Debt Ratio (OZ)`, `Current Ratio (BP)`, `Debt Service Coverage Ratio (WOZ)`, and `Total Asset Efficiency Ratio (WO)`. 🔍
-- The sample is divided into a training set and a test set. The training set is used to build and calibrate the logistic regression models, while the test set is used to validate the model's predictive accuracy.
+## 🔬 Methodology  
+- The analysis is based on **three datasets**: main loan data, monthly balance sheets, and repayment histories.  
+- Data preprocessing includes cleaning, merging, feature transformation, and calculation of LGD-related variables.  
+- Multiple models are trained and their results are compared:
+  - **Logistic Regression** — baseline econometric model
+  - **GLM (Quasi-binomial)** — logistic regression for bounded targets (e.g., RR/LGD in [0,1])
+  - **XGBoost** — tree-based machine learning approach  
+  - **Neural Network** — nonlinear architecture for LGD prediction  
 
-# 🏆 Findings
+## 📊 Findings  
+Preliminary results indicate that Neural Network models outperform traditional econometric approaches in predicting LGD based on this dataset. However, there are limitations to using black-box models in decision-making cases, such as loan approval. 
+Although, as black-box approaches have become more widespread, these limitations have been mitigated over time. 
 
-<div align="center">
-  <img src="https://github.com/dzima22/The-evaluation-of-the-risk-of-corporate-bankruptcy-/blob/main/imgs/Rcurve.png" alt="" width="600"/>
-</div>
-
-- ROC Curve and AUC: The Receiver Operating Characteristic (ROC) curve is plotted to visualize the trade-off between sensitivity and specificity for different threshold values
-- Area Under the Curve (AUC) is calculated to quantify the overall ability of the model to discriminate between the classes. So in this research `auc=0,94` so the predictive properties can be assessed as good, but it should be remembered that the study was conducted on a relatively small sample.
+## ⚙️ How to Use  
+1. Make sure you have downloaded the dataset folder(see the link, that is provided in the **Content** section).  
+2. Run the main pipeline: python Main.py
