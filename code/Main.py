@@ -10,6 +10,8 @@ if __name__ == "__main__":
     print("All dataset files are stored externally due to GitHub's 25 MB limit.\n")
     print("You can download the full dataset folder here:")
     print("https://drive.google.com/drive/folders/1eJa3BlWuP4GK_8zP0EMlIcM_uBTrWGap?usp=sharing\n")
+    print("Or if the link does not work properly go straight to dataset folder:")
+    print("https://github.com/dzima22/LGD_Prediction_Models/tree/main/datasets")
     print("After downloading, please provide your local file paths below.\n")
     loans_path=input("Enter path to main_loan_base.csv: ")
     balance_path=input("Enter path to monthly_balance_base.csv: ")
@@ -58,4 +60,5 @@ if __name__ == "__main__":
     eval.save_output(f"Hellwig best subset: {best_subset}", "hellwig_best_subset.txt")
     eval.save_output(vif_results, "vif_results.csv")
     eval.save_output(f"Forward Selection features: {forward_selected}", "forward_selection.txt")
+
 
