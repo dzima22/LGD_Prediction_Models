@@ -1,10 +1,10 @@
 if __name__ == "__main__":
-    import Data_processing as dp
-    import Visuals as vis
-    import Models as md
-    import Evaluation as eval
-    import feature_selection as fs
-    import pandas as pd
+    from modules import Data_processing as dp
+    from modules import Visuals as vis
+    from modules import Models as md
+    from modules import Evaluation as eval
+    from modules import feature_selection as fs
+    from modules import pandas as pd
     #information_for_the_user
     print("The file 'monthly_balance_base.csv' is too large to be hosted online.")
     print("All dataset files are stored externally due to GitHub's 25 MB limit.\n")
@@ -60,5 +60,6 @@ if __name__ == "__main__":
     eval.save_output(f"Hellwig best subset: {best_subset}", "hellwig_best_subset.txt")
     eval.save_output(vif_results, "vif_results.csv")
     eval.save_output(f"Forward Selection features: {forward_selected}", "forward_selection.txt")
+
 
 
