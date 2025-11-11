@@ -9,9 +9,9 @@ The goal is to estimate the proportion of exposure a lender loses in the event o
 The study utilizes loan-level data containing information on repayment behavior, balances, and loan characteristics.  
 
 ## 📂 Content  
-- [**Main.py**](https://github.com/dzima22/LGD_Prediction_Models/blob/main/Main.py) — central pipeline setup covering data loading, preprocessing, modeling, evaluation and visualization ⚙️  
-- [**modules**](https://github.com/dzima22/LGD_Prediction_Models/tree/main/code/modules) — folder containing separate scripts for data processing, feature selection, modeling, evaluation, and visualizations 🧩  
-- [**datasets**](https://drive.google.com/drive/folders/1eJa3BlWuP4GK_8zP0EMllcM_uBTrWGap?usp=sharing) — datasets used in analysis 📁  
+- [**Main.py**](https://github.com/dzima22/LGD_Prediction_Models/tree/main/code/Main.py) — central pipeline setup covering data loading, preprocessing, modeling, evaluation and visualization ⚙️  
+- [**modules**](https://github.com/dzima22/LGD_Prediction_Models/tree/main/code/modules) — folder containing separate modules for data processing, feature selection, modeling, evaluation, and visualizations 🧩  
+- [**datasets**](https://github.com/dzima22/LGD_Prediction_Models/tree/main/datasets) — datasets used in analysis 📁  
 - [**Research**](https://github.com/dzima22/LGD_Prediction_Models/blob/main/Reserch.pdf) —  full research report summarizing methodology, models, and findings 📄 
 - [**visuals_folder**](https://github.com/dzima22/LGD_Prediction_Models/tree/main/visuals_folder) — output containing visuals and models' performance  📊  
 
