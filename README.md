@@ -4,9 +4,10 @@
 - Areas: Credit Risk, Econometrics, Loss Given Default (LGD), Machine Learning  
 
 ## 💡 About  
-The project focuses on **Loss Given Default** prediction — one of the three key components of credit risk modeling (alongside PD and EAD).  
-The goal is to estimate the proportion of exposure a lender loses in the event of borrower default, using both traditional statistical and modern machine learning approaches.  
-The study utilizes loan-level data containing information on repayment behavior, balances, and loan characteristics.  
+This project explores the prediction of Loss Given Default — a key component of credit risk measurement alongside Probability of Default and Exposure at Default.
+The analysis combines traditional econometric models with modern machine learning algorithms estimates potencial losses after borrower default.
+The study uses real-world loan-level data containing information on repayments, balances, and borrower characteristics.
+The project also discusses the challenges of applying black-box models in regulated banking environment, where explainability remains a key factor
 
 ## 📂 Content  
 - [**Main.py**](https://github.com/dzima22/LGD_Prediction_Models/tree/main/code/Main.py) — central pipeline setup covering data loading, preprocessing, modeling, evaluation and visualization ⚙️  
