@@ -4,7 +4,6 @@ import itertools
 import statsmodels.api as sm
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
-# 🔹 Zmienna globalna z Twoimi 12 feature’ami
 NUMERIC_FEATURES = [
     'loan_amount', 'collateral_value', 'cheque_bounces',
     'number_of_loans', 'missed_repayments', 'vintage_in_months',
@@ -55,4 +54,5 @@ def forward_selection(df, target_col, threshold_in=0.05):
         if not changed:
             break
     return included
+
 
