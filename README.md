@@ -30,8 +30,6 @@ Preliminary results indicate that Neural Network models outperform traditional e
 Although, as black-box approaches have become more widespread, these limitations have been mitigated over time. 
  
 ## Project structure
-## Project structure
-
 ```text
 LGD_Prediction_Models/
 ├── README.md
@@ -51,7 +49,6 @@ LGD_Prediction_Models/
 │   └── README.md
 ├── visuals_folder/
 └── Research.pdf
-
 
 ## ⚙️ How to use
 python code/Main.py
