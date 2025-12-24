@@ -3,18 +3,13 @@ import numpy as np
 import itertools
 import statsmodels.api as sm
 from statsmodels.stats.outliers_influence import variance_inflation_factor
-
-NUMERIC_FEATURES = [
-    'loan_amount', 'collateral_value', 'cheque_bounces',
-    'number_of_loans', 'missed_repayments', 'vintage_in_months',
-    'tenure_years', 'interest', 'monthly_emi',
-    'total_repayment', 'avg_balance_amt', 'avg_rr_per_city']
+from modules.config import (numeric_features)
 
 def hellwig_selection(df, target_col, min_k=2, max_k=5):
     """
     Metoda Hellwiga dla 12 wybranych zmiennych liczbowych.
     """
-    X = df[NUMERIC_FEATURES].copy()
+    X = df[numeric_features].copy()
     corr_with_y = X.apply(lambda col: df[target_col].corr(col))
     def hellwig_score(subset):
         r_yi_sq = np.array([corr_with_y[feature] ** 2 for feature in subset])
@@ -31,13 +26,13 @@ def hellwig_selection(df, target_col, min_k=2, max_k=5):
     results = pd.DataFrame(scores, columns=['subset', 'hellwig_score']).sort_values(by='hellwig_score', ascending=False)
     return results, best_subset
 def vif_selection(df):
-    X = sm.add_constant(df[NUMERIC_FEATURES].copy())
+    X = sm.add_constant(df[numeric_features].copy())
     vif_data = pd.DataFrame({
         'Variable': X.columns,
         'VIF': [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]})
     return vif_data
 def forward_selection(df, target_col, threshold_in=0.05):
-    X = df[NUMERIC_FEATURES].copy()
+    X = df[numeric_features].copy()
     included = []
     while True:
         changed = False
