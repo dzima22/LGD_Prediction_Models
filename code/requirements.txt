@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+statsmodels
+imbalanced-learn
+xgboost
+bayesian-optimization
+matplotlib
+seaborn
+torch
