@@ -29,7 +29,16 @@ The project also discusses the challenges of applying black-box models in regula
 Preliminary results indicate that Neural Network models outperform traditional econometric approaches in predicting LGD based on this dataset. However, there are limitations to using black-box models in decision-making cases, such as loan approval. 
 Although, as black-box approaches have become more widespread, these limitations have been mitigated over time. 
 
-```md
+## ⚙️ How to use
+python code/Main.py
+
+## Data
+Due to size constraints, datasets are not stored in the repository.
+See datasets/README.md for access instructions.
+
+## Configuration
+Global paths, constants, feature lists, and model hyperparameters are defined in `modules/config.py`.
+
 ## Project structure
 ```text
 LGD_Prediction_Models/
@@ -49,14 +58,4 @@ LGD_Prediction_Models/
 ├── datasets/
 │   └── README.md
 ├── visuals_folder/
-└── Research.pdf ```md
-
-## ⚙️ How to use
-python code/Main.py
-
-## Data
-Due to size constraints, datasets are not stored in the repository.
-See datasets/README.md for access instructions.
-
-## Configuration
-Global paths, constants, feature lists, and model hyperparameters are defined in `modules/config.py`.
+└── Research.pdf
