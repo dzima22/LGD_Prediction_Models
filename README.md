@@ -49,8 +49,7 @@ LGD_Prediction_Models/
 ├── datasets/
 │   └── README.md
 ├── visuals_folder/
-└── Research.pdf
-```md
+└── Research.pdf ```md
 
 ## ⚙️ How to use
 python code/Main.py
